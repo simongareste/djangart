@@ -20,5 +20,5 @@ class ProductsBundle(models.Model):
   comment = models.CharField(max_length=50)
 
   def __str__(self):
-    return self.bundler_product+"-"+self.product
+    return str(self.bundler_product)+" - "+str(self.product)
 
